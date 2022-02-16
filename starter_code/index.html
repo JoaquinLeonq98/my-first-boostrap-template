@@ -1,11 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title E-comerce page</title>
-    <!--There are some bugs, please fix those before start your solution-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="max-height: 100px"
+            >
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">All Products</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Popular Items</a></li>
 
-</head>
-<body>
-    
+                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button type="button" class="btn btn-outline-dark">Cart</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin de  Barra de navegación -->
+
+    <!-- Jumbotron, bienvenida -->
+    <section class="jumbotron jumbotron-fluid fondo">
+      <h1 class="display-4 text-center text-white">Shop in style</h1>
+      <p class="lead text-center text-white">This is a shop Ecommerce technology</p>
+    </section>
+
+    <!-- Productos y cards -->
+
+    <!-- card 1 -->
+    <main class="container">
+      <section class="row">
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto1.jpg"
+              class="card-img-top"
+              alt="Laptop"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Oled</h5>
+              <p class="card-text">$100 - $200</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2  -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./src/img/producto2.jpg"
+              class="card-img-top"
+              alt="Laptop"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Oled PRO</h5>
+              <p class="card-text">$200 - $250</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto3.jpg"
+              class="card-img-top"
+              alt="Laptop"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Pro Max</h5>
+              <p class="card-text">$500 - $600</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto4.jpg"
+              class="card-img-top"
+              alt="Set-Up Gamer"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Basic Set-Up Gamer</h5>
+              <p class="card-text">$800 - $1000</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5  -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto5.jpg"
+              class="card-img-top"
+              alt="PC Gamer"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">PC Gamer Basic</h5>
+              <p class="card-text">$600 - $800</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto6.jpg"
+              class="card-img-top"
+              alt="Laptop"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Full HD</h5>
+              <p class="card-text">$100 - $150</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto7.jpg"
+              class="card-img-top"
+              alt="Set-Up Gamer"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Set - Up Gamer Relativ</h5>
+              <p class="card-text">$1000 - $1500</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto8.jpg"
+              class="card-img-top"
+              alt="Set-Up"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Set-Up Dual Edition</h5>
+              <p class="card-text">$1000 - $1200</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 9 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto9.jpg"
+              class="card-img-top"
+              alt="Pc y consolas retro"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mini PC Vintage</h5>
+              <p class="card-text">$600 - $800</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto10.jpg"
+              class="card-img-top"
+              alt="Laptop Gamer"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Gamer Master Race</h5>
+              <p class="card-text">$1500 - $1800</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto11.jpg"
+              class="card-img-top"
+              alt="Laptop vieja"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Clasica</h5>
+              <p class="card-text">$50 - $100</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+        <div class="col-lg-4 col-md-6 pt-4 pb-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="src/img/producto12.jpg"
+              class="card-img-top"
+              alt="Laptop toshiba"
+              height="200px"
+              width="450px"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop Toshiba</h5>
+              <p class="card-text">$100 - $150</p>
+              <br />
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-dark">View Options</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

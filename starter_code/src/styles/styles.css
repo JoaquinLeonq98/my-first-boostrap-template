@@ -1,0 +1,8 @@
+.fondo {
+  background-image: url(../img/wallpaperbetter.com_7680x4320.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  height: 45vh;
+}
